@@ -1,0 +1,109 @@
+/* Reset and base styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main game container */
+.root {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.root:hover {
+    transform: translateY(-3px);
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Scrambled word */
+#scrambledWord {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3e64ff;
+    margin-bottom: 10px;
+}
+
+/* Hint text */
+#hint {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Input field */
+#input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#input:focus {
+    border-color: #3e64ff;
+    box-shadow: 0 0 8px rgba(62, 100, 255, 0.3);
+}
+
+/* Result text */
+#output {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Button container */
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Button styling with hover effect */
+button {
+    background-color: #3e64ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+}
+
+button:hover {
+    background-color: #324ed4;
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+button i{
+    margin-right: 8px;
+}
